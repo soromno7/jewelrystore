@@ -1,5 +1,5 @@
 export function Discount() {
     return(
-        <b>KARASIK21</b>
+        <b>KARASIK2</b>
     );
 }
