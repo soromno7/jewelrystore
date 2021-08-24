@@ -1,0 +1,27 @@
+.storeListContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-bottom: 50px;
+}
+
+.storeListContainer > * {
+    padding: 15px;
+    background: #F6F6F6;
+    box-sizing: unset;
+    border: 1px solid white;
+    border-radius: 20%;
+
+    img {
+        width: 260px;
+        height: 260px;
+    }
+}
+
+.storeAddresses {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-bottom: 100px;
+    font-family: Zurich;
+}

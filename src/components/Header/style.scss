@@ -1,0 +1,30 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 25px;
+
+  h1 {
+    font-family: Zurich light;
+  }
+}
+
+.logo {
+  width: 150px;
+  height: 75px;
+}
+
+.cartBtn {
+  width: 150px;
+  height: 50px;
+  border-radius: 30px;
+  cursor: pointer;
+  background: black;
+}

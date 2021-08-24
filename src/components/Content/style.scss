@@ -1,0 +1,25 @@
+main {
+    padding-top: 50px;
+    
+    h1 {
+        font-family: Zurich light;
+    }
+}
+
+.bg {
+    background: #F6F6F6;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+
+    img {
+        width: 90%;
+        height: 90%;
+    }
+}
+
+.storeListHeader {
+    text-align: center;
+    Margin-bottom: 0;
+}
+
