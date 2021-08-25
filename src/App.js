@@ -18,8 +18,13 @@ function App() {
           <Route exact path="/discount">
             <Discount/>
           </Route>
+          <Route path="/rings">
+            <Discount/>
+          </Route>
+          <Route path="/">
+            <Content/>
+          </Route>
         </Switch>
-        <Content/>
         <Footer/>
       </>
     </Router>

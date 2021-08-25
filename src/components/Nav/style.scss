@@ -1,20 +1,23 @@
 .mainHeader {
-    display: flex;
-    flex-direction: row;
-    background: #F6F6F6;
-    justify-content: center;
+  display: flex;
+  flex-direction: row;
+  background: #f6f6f6;
+  justify-content: center;
+  margin-bottom: 50px;
 }
 
 .mainHeader > * {
-    background: #F6F6F6;
-    padding: 30px;
-    cursor: pointer;
-    transition-property: background, color;
-    transition-duration: 0.3s;
-    font-family: Zurich;
+  background: #f6f6f6;
+  padding: 30px;
+  cursor: pointer;
+  transition-property: background, color;
+  transition-duration: 0.3s;
+  font-family: Zurich;
+  color: black;
 }
 
 .mainHeader > *:hover {
-    background: black;
-    color: white;
+  background: black;
+  color: white;
+  text-decoration: none;
 }
