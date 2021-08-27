@@ -1,0 +1,40 @@
+.card {
+  border: 2px solid black;
+  width: 250px;
+  display: flex;
+
+  text-align: center;
+  align-items: center;
+
+  margin-bottom: 50px;
+
+  .cardText {
+    padding: 10px;
+  }
+  .name {
+    padding: 10px;
+  }
+  .cardPic {
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+  }
+
+  button {
+    width: 200px;
+    height: 30px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    border: none;
+    margin-bottom: 10px;
+  }
+}
+
+.container {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}

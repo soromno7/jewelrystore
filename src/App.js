@@ -18,7 +18,7 @@ function App() {
           <Route exact path="/discount">
             <Discount/>
           </Route>
-          <Route path="/rings">
+          <Route exact path="/rings">
             <Discount/>
           </Route>
           <Route path="/">
