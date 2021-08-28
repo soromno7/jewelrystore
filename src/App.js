@@ -10,24 +10,25 @@ import './App.css';
 
 function App() {
   return (
-    <Router>
-      <>
-        <Header/>
-        <Nav/>
-        <Switch>
-          <Route exact path="/discount">
-            <Discount/>
-          </Route>
-          <Route exact path="/rings">
-            <Discount/>
-          </Route>
-          <Route path="/">
-            <Content/>
-          </Route>
-        </Switch>
-        <Footer/>
-      </>
-    </Router>
+      <Router>
+        <>
+          <Header/>
+          <Nav/>
+          <Switch>
+            <Route exact path="/discount">
+              <Discount/>
+            </Route>
+            <Route exact path="/rings">
+              <Discount/>
+            </Route>
+            <Route path="/">
+              <Content/>
+            </Route>
+          </Switch>
+          <Footer/>
+        </>
+      </Router>
+    
   );
 }
 

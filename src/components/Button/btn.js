@@ -1,27 +1,39 @@
 import { createStore } from "redux";
+import { data } from "../Pages/data.js";
 
-function reducer(state = 0, action) {
+let initialState = [];
+
+let id = data[0].map((e) => e.id);
+
+
+
+function reducer(initialState = [], action) {
     if (action.type === "ADD_STUFF") {
-        return state + 1;
+        return [];
     };
-    return state;
+    return initialState;
 }
 
 export const store = createStore(reducer);
 
 store.subscribe(() => {
-    console.log("Kopa", store.getState())
+    console.log("number", store.getState())
 });
 
 store.dispatch({ type: "ADD_STUFF"});
 
 function add() {
+    if(id[2] === data[0][2].id) {
+        initialState.push(data[0][2])
+        console.log(initialState)
+    }
     store.dispatch({ type: "ADD_STUFF"});
 }
+
 
 export function Btn() {
 
     return(
-        <button id="btn" onClick={add}>Add to cart</button>
+        <button onClick={add}>Add to cart</button>
     );
 }
