@@ -27,8 +27,8 @@ export function Cart() {
                     </div>
                     <div className="cartOrder">
                         <div className="orderView">
-                            <span className="productName">Карасик</span>
-                            <img className="cartOrderImg"></img>
+                            <span className="productName">Кольцо</span>
+                            <img className="cartOrderImg" src="https://1gold.by/image/cache/import_files/963711k.1_zoloto/963711k.1-600x600.jpg"></img>
                         </div>
                         <div className="orderPrice">
                             44 $
