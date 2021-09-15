@@ -2,15 +2,9 @@ import "./style.scss";
 import logo from "./logo.svg";
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import { createStore } from "redux";
-import { store, reducer } from "../Button/btn.js";
-import { render } from "react-dom";
-
 
 export function Header () {
-
-    const [count, setCount] = useState(0);
-
+    
     return (
         <div className="header">
             <Link to="/">
@@ -22,8 +16,8 @@ export function Header () {
 
             <h1>That's what you want.</h1>
             <Link to="/cart">
-                <button className="cartBtn">
-                    <div id="counter"></div>
+                <button className="cartBtn" >
+                    <div id="counter">Cart</div>
                 </button>
             </Link>
         </div>

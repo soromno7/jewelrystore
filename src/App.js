@@ -7,14 +7,9 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { Discount } from "./components/Pages/Discount.js";
 import { Cart } from "./components/Pages/Cart/Cart.js";
 import { Provider } from "react-redux";
-import { createStore } from "redux";
-import { reducer } from "./components/Redux/reducer.js";
+import { store } from "./components/Pages/Discount.js";
 import "./fonts/style.scss";
 import './App.css';
-
-const store = createStore(reducer);
-
-store.getState()
 
 function App() {
   return (

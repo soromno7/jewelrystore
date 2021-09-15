@@ -4,18 +4,17 @@ import { createStore } from "redux";
 
 let initialState = [];
 
-const store = createStore(reducer);
+export const store = createStore(reducer);
 
 function reducer(state = initialState, action) {
     switch (action.type) {
         case "ADD_PRODUCT_TO_CART":
             return [...state, action.payload]
-
-        case "ADD_1MORE_PRODUCT_TO_CART":
-            return [...state, action.payload]
     }
     return state;
 }
+
+
 
 let id = data[0].map((e) => e.id);
 
@@ -25,13 +24,7 @@ export function Discount() {
 
         let result = e.currentTarget.id;
 
-        // console.log(result);
-
         let toCartProduct = data[0].find(e => e.id === result);
-
-        // initialState.push(toCartProduct);
-
-        // console.log(initialState);
 
         const AddProductToCart = {
             type: "ADD_PRODUCT_TO_CART",
