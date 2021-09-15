@@ -1,0 +1,52 @@
+.cartContainer {
+  width: 80%;
+  background-color: rgb(201, 199, 199);
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid black;
+
+  .cartHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 15px;
+    border-bottom: 2px solid black;
+  }
+
+  .cartOrder {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    padding-bottom: 30px;
+  }
+}
+
+.cartOrderImg {
+  width: 200px;
+  height: 200px;
+}
+
+.orderView {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-left: 75px;
+  margin-top: 10px;
+
+  .productName {
+    margin-bottom: 10px;
+  }
+}
+
+.orderPrice {
+  margin-left: 170px;
+}
+
+.orderQuantity {
+  margin-left: 200px;
+}
+
+.orderFinalPrice {
+  margin-left: 225px;
+}

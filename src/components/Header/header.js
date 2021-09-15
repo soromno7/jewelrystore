@@ -21,9 +21,11 @@ export function Header () {
             </Link>
 
             <h1>That's what you want.</h1>
-            <button className="cartBtn">
-                <div id="counter"></div>
-            </button>
+            <Link to="/cart">
+                <button className="cartBtn">
+                    <div id="counter"></div>
+                </button>
+            </Link>
         </div>
     );
 }

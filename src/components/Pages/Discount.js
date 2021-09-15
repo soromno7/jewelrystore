@@ -1,13 +1,48 @@
 import "./style.scss";
 import { data } from "./data.js";
-import { Btn } from "../Button/btn.js";
-// import { createStore } from "../Redux/createStore";
-// import { reducer } from "../Redux/reducer.js";
+import { createStore } from "redux";
 
+let initialState = [];
 
+const store = createStore(reducer);
 
+function reducer(state = initialState, action) {
+    switch (action.type) {
+        case "ADD_PRODUCT_TO_CART":
+            return [...state, action.payload]
+
+        case "ADD_1MORE_PRODUCT_TO_CART":
+            return [...state, action.payload]
+    }
+    return state;
+}
+
+let id = data[0].map((e) => e.id);
 
 export function Discount() {
+
+    const getButtonId = (e) => {
+
+        let result = e.currentTarget.id;
+
+        // console.log(result);
+
+        let toCartProduct = data[0].find(e => e.id === result);
+
+        // initialState.push(toCartProduct);
+
+        // console.log(initialState);
+
+        const AddProductToCart = {
+            type: "ADD_PRODUCT_TO_CART",
+            payload: toCartProduct,
+        }
+        
+        store.dispatch(AddProductToCart);
+
+        console.log(store.getState())
+      }
+
     return(
         <>
            <div className="container">
@@ -20,7 +55,7 @@ export function Discount() {
                         <div className="price">Price: {data[0][i].price}</div>
                         <div className="size">Size: {data[0][i].size}</div>
                     </div>
-                    <Btn id={data[0][i].id}/>
+                    <button id={data[0][i].id} onClick={getButtonId}>Add to cart</button>
                    </div>
                ))}
            </div>
