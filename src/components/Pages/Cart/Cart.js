@@ -9,7 +9,6 @@ export function Cart() {
 
     return(
         <>
-            {/* {store.map((e, i) => ( */}
                 <div className="cartContainer">
                     <div className="cartHeader">
                         <div>
