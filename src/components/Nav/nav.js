@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 export function Nav() {
     return (
         <div className="mainHeader">
-            <Link to="/discount" id="discount">Discount</Link>
             <Link to="/rings" id="rings">Rings</Link>
             <Link to="/earrings" id="earrings">Earrings</Link>
             <Link to="/necklaces" id="necklaces">Necklaces</Link>

@@ -24,25 +24,26 @@ export function Cart() {
                             Final price
                         </div>
                     </div>
-                    <div className="cartOrder">
+                    {store.getState().map((e, i) => ( <div className="cartOrder" id="cartOrder">
                         <div className="orderView">
-                            <span className="productName">Кольцо</span>
-                            <img className="cartOrderImg" src="https://1gold.by/image/cache/import_files/963711k.1_zoloto/963711k.1-600x600.jpg"></img>
+                            <span className="productName">{store.getState()[i].name}</span>
+                            <img className="cartOrderImg" src={store.getState()[i].img}></img>
                         </div>
                         <div className="orderPrice">
-                            44 $
+                            {store.getState()[i].price}
                         </div>
                         <div className="orderQuantity">
-                            <img onClick={() => setCount(count + 1)} src="https://image.flaticon.com/icons/png/512/262/262039.png" width="50px" height="50px"></img>
+                            <img onClick={() => setCount(count - 1)} src="https://image.flaticon.com/icons/png/512/262/262039.png" width="50px" height="50px"></img>
                             {count}
-                            <img onClick={() => setCount(count - 1)}src="https://image.flaticon.com/icons/png/512/159/159690.png" width="50px" height="50px"></img>
+                            <img onClick={() => setCount(count + 1)}src="https://image.flaticon.com/icons/png/512/159/159690.png" width="50px" height="50px"></img>
                         </div>
                         <div className="orderFinalPrice">
-                            {count * 44}
+                            {count * store.getState()[i].price.replace("$", "") + " $"}
                         </div>
                     </div>
+                    ))}
                 </div>
-            
         </>
     )
 };
+

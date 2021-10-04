@@ -1,7 +1,7 @@
 .card {
-  border: 2px solid black;
   width: 250px;
   display: flex;
+  background: #f6f6f6;
 
   text-align: center;
   align-items: center;
@@ -17,7 +17,6 @@
   .cardPic {
     width: 200px;
     height: 200px;
-    border: 1px solid black;
   }
 
   button {

@@ -19,9 +19,6 @@ function App() {
           <Header/>
           <Nav/>
           <Switch>
-            <Route exact path="/discount">
-              <Discount/>
-            </Route>
             <Route exact path="/rings">
               <Discount/>
             </Route>

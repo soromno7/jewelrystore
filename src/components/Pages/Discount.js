@@ -34,6 +34,7 @@ export function Discount() {
         store.dispatch(AddProductToCart);
 
         console.log(store.getState())
+
       }
 
     return(

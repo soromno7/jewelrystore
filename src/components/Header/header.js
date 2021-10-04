@@ -1,7 +1,6 @@
 import "./style.scss";
 import logo from "./logo.svg";
 import { Link } from "react-router-dom";
-import { useState } from "react";
 
 export function Header () {
     
@@ -16,7 +15,7 @@ export function Header () {
 
             <h1>That's what you want.</h1>
             <Link to="/cart">
-                <button className="cartBtn" >
+                <button className="cartBtn">
                     <div id="counter">Cart</div>
                 </button>
             </Link>

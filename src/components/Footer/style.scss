@@ -1,20 +1,21 @@
 footer {
-    background: #f6f6f6;
-    height: 250px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  background: #f6f6f6;
+  height: 250px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
 
-    h3 {
-        padding-top: 50px;
-        font-family: Zurich light;
-    }
+  h3 {
+    padding-top: 50px;
+    font-family: Zurich light;
+  }
 }
 
 .socialMediaContainer > * {
-    width: 75px;
-    height: 75px;
-    cursor: pointer;
-    padding: 5px;
+  width: 75px;
+  height: 75px;
+  cursor: pointer;
+  padding: 5px;
 }

@@ -3,7 +3,7 @@ export const data = [
         {
             id: "0",
             name: "КОЛЬЦО ОБРУЧАЛЬНОЕ С БРИЛЛИАНТОМ ИЗ ЗОЛОТА 580 ПРОБЫ",
-            price: "905.7 $",
+            price: "905 $",
             weight: "3.26",
             size: "17.5",
             img: "https://1gold.by/image/cache/import_files/963711k.1_zoloto/963711k.1-600x600.jpg",
@@ -12,7 +12,7 @@ export const data = [
         {
             id: "1",
             name: "КОЛЬЦО ПОМОЛВОЧНОЕ С БРИЛЛИАНТАМИ ИЗ ЗОЛОТА 580 ПРОБЫ",
-            price: "745.8 $",
+            price: "745 $",
             weight: "2.05",
             size: "17",
             img: "https://1gold.by/image/cache/import_files/5-1703-103-1K_zoloto/5-1703-103-1K_2,33-600x600-600x600.jpg",
