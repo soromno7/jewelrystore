@@ -10,11 +10,11 @@ function reducer(state = initialState, action) {
     switch (action.type) {
         case "ADD_PRODUCT_TO_CART":
             return [...state, action.payload]
+        case "KARASIK":
+            return console.log(state);
     }
     return state;
 }
-
-
 
 let id = data[0].map((e) => e.id);
 
@@ -32,8 +32,6 @@ export function Discount() {
         }
         
         store.dispatch(AddProductToCart);
-
-        console.log(store.getState())
 
       }
 

@@ -28,14 +28,12 @@
 .cartOrderImg {
   width: 150px;
   height: 150px;
-  position: relative;
-  left: 0;
-  top: 0;
 }
 
 .orderView {
   display: flex;
   flex-direction: column;
+  align-items: center;
   text-align: center;
   margin-top: 10px;
 
@@ -49,6 +47,11 @@
   }
 }
 
-.box-none {
-  display: none;
+.removeFromCartIcon {
+  cursor: pointer;
+  margin-right: 90px;
+}
+
+.orderPrice {
+  margin-right: 150px;
 }
